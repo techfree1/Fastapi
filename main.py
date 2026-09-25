@@ -10,5 +10,5 @@ def create_user(user:User):
     return user
 @app.get("/user/{user_id}")
 def get_user(user_id:int):
-    return {}
+    return {f"message : {user_id} of id "}
     
