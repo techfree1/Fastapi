@@ -8,3 +8,7 @@ class User(BaseModel):
 @app.post("/user")
 def create_user(user:User):
     return user
+@app.get("/user/{user_id}")
+def get_user(user_id:int):
+    return {}
+    
