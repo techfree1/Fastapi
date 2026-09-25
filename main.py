@@ -11,4 +11,11 @@ def create_user(user:User):
 @app.get("/user/{user_id}")
 def get_user(user_id:int):
     return {f"message : {user_id} of id "}
+
+# query parameter
+@app.get("/user")
+def user_id(city :str):
+    return {"city":city}
+
+    
     
